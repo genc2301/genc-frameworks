@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-31T16:10:23 IST" name="Suite" finished-at="2023-12-31T16:10:33 IST" duration-ms="10430">
+    <groups>
+    </groups>
+    <test started-at="2023-12-31T16:10:23 IST" name="Test" finished-at="2023-12-31T16:10:33 IST" duration-ms="10430">
+      <class name="com.cogni.genc.testcases2.Validate_LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cogni.genc.testcases2.Validate_LoginPageTest@2f7298b]" started-at="2023-12-31T16:10:20 IST" name="setUp" finished-at="2023-12-31T16:10:23 IST" duration-ms="2513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeObject()[pri:0, instance:com.cogni.genc.testcases2.Validate_LoginPageTest@2f7298b]" started-at="2023-12-31T16:10:23 IST" name="initializeObject" finished-at="2023-12-31T16:10:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeObject -->
+        <test-method signature="testLogin()[pri:0, instance:com.cogni.genc.testcases2.Validate_LoginPageTest@2f7298b]" started-at="2023-12-31T16:10:23 IST" name="testLogin" finished-at="2023-12-31T16:10:33 IST" duration-ms="10400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.cogni.genc.testcases2.Validate_LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

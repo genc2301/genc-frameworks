@@ -1,0 +1,4 @@
+com\cogni\genc\testcases2\Validate_AccountRegistration.class
+com\cogni\genc\testcases2\Validate_OrdersPage.class
+com\cogni\genc\testcases2\Validate_LoginPageTest.class
+com\cogni\genc\testcases2\BaseTest.class
