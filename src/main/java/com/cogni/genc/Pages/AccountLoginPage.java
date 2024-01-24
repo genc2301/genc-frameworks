@@ -18,7 +18,7 @@ public class AccountLoginPage {
 	public static final By txtPassword = By.id("input-password");
 	public static final By btnLogin = By.xpath(".//input[@type='submit']");
 	
-	
+	String txt = "TestCase";
 	
 	 public void enterCredentials(WebDriver driver) {
 		 
