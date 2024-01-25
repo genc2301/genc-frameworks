@@ -4,10 +4,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import com.cogni.genc.CommomMethods.*;
 
 public class AccountLoginPage {
 	
 	WebDriver driver;
+	CommonHelperActions actions = new CommonHelperActions();
+	
 	public AccountLoginPage(WebDriver driver) {
 		this.driver = driver;
 		System.out.println("this.driver-> "+this.driver);
@@ -31,7 +34,7 @@ public class AccountLoginPage {
 	 
 	 public void clickLoginButton() {
 		 
-		 driver.findElement(btnLogin).click();
+		 actions.click(driver, btnLogin);
 		 
 	 }
 	 
