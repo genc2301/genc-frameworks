@@ -32,9 +32,10 @@ public class AccountLoginPage {
 		 
 	 }
 	 
-	 public void clickLoginButton() {
+	 public void clickLoginButton() throws InterruptedException {
 		 
-		 actions.click(driver, btnLogin);
+		 //actions.click(driver, btnLogin);
+		 CommonHelperActions.waitAndclick(driver, btnLogin);
 		 
 	 }
 	 
