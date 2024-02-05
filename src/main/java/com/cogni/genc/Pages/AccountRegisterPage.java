@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.cogni.genc.CommomMethods.CommonHelperActions;
+
 public class AccountRegisterPage {
 	
 	public WebDriver driver;	
@@ -65,9 +67,14 @@ public class AccountRegisterPage {
 		System.out.println("Inside enterDetails()-"+driver);
 		fname.sendKeys("Rohit");
 		lname.sendKeys("Ranjan");
+		
+		//Cannot implement common methods as Page Factory provides WebElement but we require By locator
+		//CommonHelperActions.sendKeys(driver, email, "rohit125@gmail.com");
+		
 		email.sendKeys("rohit125@gmail.com");
 		telephone.sendKeys("2323433343");
 		newCust.sendKeys("rohit125");
+//		password.sendKeys("rohit125");
 		confirm.sendKeys("rohit125");
 	}
 	

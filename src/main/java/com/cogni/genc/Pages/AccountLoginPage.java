@@ -4,6 +4,8 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
 import com.cogni.genc.CommomMethods.*;
 
 public class AccountLoginPage {
@@ -13,8 +15,8 @@ public class AccountLoginPage {
 	
 	public AccountLoginPage(WebDriver driver) {
 		this.driver = driver;
-		System.out.println("this.driver-> "+this.driver);
-		System.out.println("driver-> "+driver);
+//		System.out.println("this.driver-> "+this.driver);
+//		System.out.println("driver-> "+driver);
 	}
 	
 	public static final By txtEmail = By.xpath(".//input[@name='email']");
@@ -23,12 +25,17 @@ public class AccountLoginPage {
 	
 	String txt = "TestCase";
 	
+	
+	
 	 public void enterCredentials(WebDriver driver) {
 		 
-		 System.out.println("4>> Driver Id-"+driver);
+//		 System.out.println("4>> Driver Id-"+driver);
 		 
-		 driver.findElement(txtEmail).sendKeys("rohit123@gmail");
-		 driver.findElement(txtPassword).sendKeys("rohit123");
+//		 driver.findElement(txtEmail).sendKeys("rohit123@gmail");
+//		 driver.findElement(txtPassword).sendKeys("rohit123");
+		 CommonHelperActions.sendKeys(driver, txtEmail, "rohit123@gmail");
+		 CommonHelperActions.sendKeys(driver, txtPassword, "rohit123");
+		 
 		 
 	 }
 	 
@@ -44,6 +51,8 @@ public class AccountLoginPage {
 		 if(driver.findElements(By.xpath(".//div[contains(@class,'alert')]")).size() >0) {
 			 System.out.println("Login Failed");
 		 }
+		 
+		 Assert.assertEquals(true,driver.findElements(By.xpath(".//div[contains(@class,'alert')]")).size() ==0);
 	 }
 
 	
