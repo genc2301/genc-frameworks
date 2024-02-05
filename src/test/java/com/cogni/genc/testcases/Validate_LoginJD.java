@@ -1,4 +1,4 @@
-package com.cogni.genc.testcases2;
+package com.cogni.genc.testcases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
