@@ -1,4 +1,4 @@
-package com.cogni.genc.testcases2;
+package com.cogni.genc.testcases;
 
 import java.time.Duration;
 
